@@ -4,9 +4,9 @@ SkyPad is simple app for using the Bluesky web app on an iPad that is enough bet
 I don't like using Bluesky in the browser on my iPad. I made SkyPad which is a simple wrapper for the Bluesky web app (http://staging.bsky.app). It required a few tweaks such as making sure all the links work and adding some basic pull to refresh functionality that isn't inhernitly in the web app. 
 
 ## How do I use it?
-- You will need XCode and an iPad (obviously) and a developer account.
+- You will need XCode and an iPad (obviously) and a developer account
 - Download the Repo
-- Follow Steps outlined [here](https://developer.apple.com/documentation/xcode/running-your-app-in-simulator-or-on-a-device)
+- Follow Steps [outlined here](https://developer.apple.com/documentation/xcode/running-your-app-in-simulator-or-on-a-device)
 
 ## What won't this app do?
 - Provide anything near a native expereince
