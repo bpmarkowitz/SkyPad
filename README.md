@@ -6,6 +6,7 @@ I don't like using Bluesky in the browser on my iPad. I made SkyPad which is a s
 ## How do I use it?
 - You will need XCode and an iPad (obviously) and a developer account
 - Download the Repo
+- Make sure you select your dev account and give it a bundle identifier
 - Follow Steps [outlined here](https://developer.apple.com/documentation/xcode/running-your-app-in-simulator-or-on-a-device)
 
 ## What won't this app do?
