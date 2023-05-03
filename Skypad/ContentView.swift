@@ -94,7 +94,8 @@ struct WebView: UIViewRepresentable {
         let swipeBackRecognizer = UISwipeGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.goBack(_:)))
         swipeBackRecognizer.direction = .right
         webView.addGestureRecognizer(swipeBackRecognizer)
-
+        
+        webView.scrollView.bounces = false
         
         return webView
     }
