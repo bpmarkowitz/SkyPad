@@ -47,6 +47,12 @@ class Coordinator: NSObject, WKNavigationDelegate, UIGestureRecognizerDelegate, 
         }
         return nil
     }
+    
+    @objc func goBack(_ sender: UISwipeGestureRecognizer) {
+        if let webView = webView, webView.canGoBack {
+            webView.goBack()
+        }
+    }
 
     @objc func didTapWebView(_ sender: UITapGestureRecognizer) {
         guard let webView = sender.view as? WKWebView else { return }
@@ -81,10 +87,15 @@ struct WebView: UIViewRepresentable {
         // Add refresh control
         refreshControl.addTarget(context.coordinator, action: #selector(Coordinator.refreshWebView), for: .valueChanged)
         webView.scrollView.addSubview(refreshControl)
-
+        
         let tapGestureRecognizer = UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.didTapWebView(_:)))
         webView.addGestureRecognizer(tapGestureRecognizer)
 
+        let swipeBackRecognizer = UISwipeGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.goBack(_:)))
+        swipeBackRecognizer.direction = .right
+        webView.addGestureRecognizer(swipeBackRecognizer)
+
+        
         return webView
     }
 
