@@ -12,7 +12,7 @@ I don't like using Bluesky in the browser on my iPad. I made SkyPad which is a s
 ## What won't this app do?
 - Provide anything near a native expereince
 - Send alerts and notifications
-- No dark mode support (not in the web app)
+- No dark mode support (yet)
 
 ## What will it to?
 - Let you run the Bluesky web app full screen, split view, and slide over
