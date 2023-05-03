@@ -17,4 +17,5 @@ I don't like using Bluesky in the browser on my iPad. I made SkyPad which is a s
 ## What will it to?
 - Let you run the Bluesky web app full screen, split view, and slide over
 - Pull down anywhere other than the main feed to refresh the page
+- Swipe to go back (New!)
 - Opens external links directly in the system browser
